@@ -8,7 +8,7 @@ const port = 3001
 
 app.use(express.json())
 
-app.get('/', (res) => {
+app.get('/', (req, res) => {
   res.send('Rune rank test callback server.')
 })
 
