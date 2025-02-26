@@ -8,6 +8,10 @@ const port = 3001
 
 app.use(express.json())
 
+app.get('/', (res) => {
+  res.send('Rune rank test callback server.')
+})
+
 app.post('/api/vote', (req, res) => {
   const signature = req.headers['vote-signature']
 
